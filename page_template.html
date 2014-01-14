@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<title>Meta Search Engine</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link href="meta_search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="jquery.validate.min.js"></script>
+<script type="text/javascript" src="form_display.js"></script>
+<script type="text/javascript" src="form_validation.js"></script>
+</head> 
+<body> 
+	<div id="container">
+        <div id="header">
+        <h1>Meta Search Engine</h1> 
+         <form id="search_form" method="get" action="results.php"> 
+            <input id="search_box" name="query" type="text" size="60" maxlength="60" value= "" />   
+            <input id="search_button" name="bt_search" type="submit" value="search" />
+            <br/> <br/>
+            <input id = "aggregate" name="aggregate" type="radio" value="true" checked="checked" />
+            <label for="aggregate"><span></span>Aggregated Results</label>
+            <input id="nonagg" name="aggregate" type="radio" value="false" />
+            <label for="nonagg"><span></span>Non-aggregated Results</label>
+            <br/><br />
+            <input id="cluster" name="cluster" type="checkbox" value="true" />
+            <label for="cluster"><span></span>Cluster Results?</label> 
+        </form> 
+        </div>
+		<div id="main">
+		
